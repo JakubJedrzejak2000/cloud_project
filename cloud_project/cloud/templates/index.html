@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+
+<div class="pa2 mb3 striped--near-white" style="text-align: center; margin-top: 20px">
+
+    {% comment %} <form action="/index", method="post">
+
+        <input type="text"></input>
+        <input type="submit" value="SEND"></input>
+
+    </form> {% endcomment %}
+
+    <form action='/index/', method="post">
+        {% csrf_token %}
+        {{form}}
+        <input type="submit" value="SEND"></input>
+
+    </form>
+
+</div>
+
+    <div class="pa2 mb3 striped--near-white" style="text-align: center;">
+
+        {%for name in names%}
+        <div class="pa2 mb3 striped--near-white" style="text-align: center">
+
+            <p class="mb2" style="text-align: center">{{name}}</p>
+        
+        </div>
+        {% endfor %}
+
+    <form action='/index/delete' method="post">
+        {% csrf_token %}
+        <input type=submit value="Delete"></input>
+    </form>
+
+    </div>
+
+
+{% endblock %}
