@@ -7,3 +7,4 @@ RUN pip install -r requirements.txt
 COPY /cloud_project/cloud /code/cloud
 COPY /cloud_project/myproject /code/myproject
 COPY /cloud_project/manage.py .
+RUN python manage.py migrate

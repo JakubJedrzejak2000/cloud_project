@@ -78,13 +78,13 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'cloud',
+        'NAME': 'postgres',
 
-        'USER': 'postgres',
+        'USER': 'rootadmin',
 
-        'PASSWORD': 'root',
+        'PASSWORD': 'Pa$$w0rd12345',
 
-        'HOST': 'db',
+        'HOST': 'zaliczenoe-cloud.postgres.database.azure.com',
 
         'PORT': '5432',
     }
