@@ -9,5 +9,5 @@ COPY /cloud_project/myproject /code/myproject
 COPY /cloud_project/manage.py .
 RUN python manage.py makemigrations
 RUN python manage.py migrate
-EXPOSE 80000
+EXPOSE 8000
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
