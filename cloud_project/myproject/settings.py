@@ -25,7 +25,15 @@ SECRET_KEY = 'django-insecure-+00o$o$i6(=evj%e-$)#s^a+4nd)o3^9m_azi*+$)y8(o(*c83
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['zaliczenie-cloud.azurewebsites.net']
+
+CSRF_TRUSTED_ORIGINS = ['https://zaliczenie-cloud.azurewebsites.net/index/', 'https://zaliczenie-cloud.azurewebsites.net', 'https://zaliczenie-cloud.azurewebsites.net']
+
+CORS_ORIGIN_WHITELIST = (
+    'zaliczenie-cloud.azurewebsites.net',
+    'https://zaliczenie-cloud.azurewebsites.net/index/',
+    'https://zaliczenie-cloud.azurewebsites.net'
+)
 
 
 # Application definition
