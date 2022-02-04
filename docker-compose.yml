@@ -8,8 +8,3 @@ services:
       - .\cloud_project\myproject:/code/myproject
     ports:
     - "8000:8000"
-    environment:
-      - POSTGRES_NAME=cloud
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-
