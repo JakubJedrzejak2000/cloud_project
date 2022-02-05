@@ -3,6 +3,7 @@ Aplikacja działa bardzo prosto, prosi użytkownika o podanie ciągu znaków(dom
 Aby utworzyć taka aplikację, najlepiej będzie podążać za komendami korzystając a azure CLI.
 
 ###1. Logujemy się na nasze konto Azure.
+
 ```
   az login
 ```
