@@ -20,17 +20,36 @@ Aby utworzyć taka aplikację, najlepiej będzie podążać za komendami korzyst
   3. Tworzymy bazę danych, nazwaną dokładnie tak jak w poleceniu. Literówka została wychwycona za późno, by warto było to naprawiać. Na potrzeby projektu hasło zapiszę tutaj, warto umieścić je w cudzysłowiach. Pa$$w0rd12345
 ```bash
 export PSQL_PASSWORD=blank
-az postgres flexible-server create --admin-password $PSQL_PASSWORD --admin-user rootadmin --database-name cloud_name --location eastus --name zaliczenoe-cloud --resource-group cloud-zaliczenie --storage-size 32 --public-access all --sku-name Standard_B1ms --tier Burstable --public-access 0.0.0.0
+az postgres flexible-server create \
+--admin-password $PSQL_PASSWORD \
+--admin-user rootadmin \
+--database-name cloud_name \
+--location eastus \
+--name zaliczenoe-cloud \
+--resource-group cloud-zaliczenie \
+--storage-size 32 \
+--public-access all \
+--sku-name Standard_B1ms \
+--tier Burstable \
+--public-access 0.0.0.0
 ```
 
   4. Następnie tworzymy naszą aplikację. Aby mogła ona zaistnieć potrzebny będzie "szkielet" w postaci Planu.
 ```bash
-az appservice plan create --name cloud-zaliczenie-plan --resource-group cloud-zaliczenie --location eastus --is-linux
+az appservice plan create \
+--name cloud-zaliczenie-plan \
+--resource-group cloud-zaliczenie \
+--location eastus \ 
+--is-linux
 ```
   
   5. Ostatni krok, czyli stworzenie aplikacji właściwej.
 ```bash
-az webapp create --name zaliczenie-cloud --plan cloud-zaliczenie-plan --resource-group cloud-zaliczenie --deployment-container-image-name jakubjedrzejak2000/cloud-zaliczenie:latest
+az webapp create \
+--name zaliczenie-cloud \
+--plan cloud-zaliczenie-plan \
+--resource-group cloud-zaliczenie \
+--deployment-container-image-name jakubjedrzejak2000/cloud-zaliczenie:latest
 ```
 Teraz wchodzimy konkretnie pod ten link 
 https://zaliczenie-cloud.azurewebsites.net/index/
