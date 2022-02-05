@@ -1,5 +1,8 @@
-Aplikacja działa bardzo prosto. Została napisana w django oraz korzysta z zentrznej bazy danych PostgreSQL.
+Aplikacja działa bardzo prosto, prosi użytkownika o podanie ciągu znaków(domyślnie chodzi o jakieś imię), a następnie wyświetla je na ekranie. Aby nie przeciążac bazy danych, ponizej został umieszczony usuwający. Została napisana w django oraz korzysta z zewnętrznej bazy danych PostgreSQL.
 
+Aby utworzyć taka aplikację, najlepiej będzie podążać za komendami korzystając a azure CLI.
+
+###1. Logujemy się na nasze konto Azure.
 ```
   az login
 ```
