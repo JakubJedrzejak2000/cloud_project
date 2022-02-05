@@ -13,7 +13,7 @@ Aby utworzyć taka aplikację, najlepiej będzie podążać za komendami korzyst
   az group create -l eastus --name cloud-zaliczenie
 ```
 
-  3. Tworzymy bazę danych, nazwaną dokładnie tak jak w poleceniu. Literówka została wychwycona za późno, by warto było to naprawiać.
+  3. Tworzymy bazę danych, nazwaną dokładnie tak jak w poleceniu. Literówka została wychwycona za późno, by warto było to naprawiać. Na potrzeby projektu hasło zapiszę tutaj, warto umieścić je w cudzysłowiach. Pa$$w0rd12345
 ```bash
 export PSQL_PASSWORD=blank
 az postgres flexible-server create --admin-password $PSQL_PASSWORD --admin-user rootadmin --database-name cloud_name --location eastus --name zaliczenoe-cloud --resource-group cloud-zaliczenie --storage-size 32 --public-access all --sku-name Standard_B1ms --tier Burstable --public-access 0.0.0.0
