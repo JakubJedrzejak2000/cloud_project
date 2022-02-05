@@ -30,3 +30,5 @@ az webapp create --name zaliczenie-cloud --plan cloud-zaliczenie-plan --resource
 ```
 Teraz wchodzimy konkretnie pod ten link 
 https://zaliczenie-cloud.azurewebsites.net/index/
+
+Po wejściu w link trzeba będzie poczekać znaczną ilość czasu oraz możliwe, że trzeba będzie odświeżyć raz lub dwa, ale w końcu powinna się pojawić działająca aplikacja.
