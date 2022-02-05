@@ -10,7 +10,7 @@ Aby utworzyć taka aplikację, najlepiej będzie podążać za komendami korzyst
 
   2. Tworzymy grupę zasobów
 ```bash
-az group create -l eastus --name cloud-zaliczenie
+  az group create -l eastus --name cloud-zaliczenie
 ```
 
   3. Tworzymy bazę danych, nazwaną dokładnie tak jak w poleceniu. Literówka została wychwycona za późno, by warto było to naprawiać.
