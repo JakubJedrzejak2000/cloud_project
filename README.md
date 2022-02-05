@@ -1,4 +1,8 @@
+## Opis
+
 Aplikacja działa bardzo prosto, prosi użytkownika o podanie ciągu znaków(domyślnie chodzi o jakieś imię), a następnie wyświetla je na ekranie. Aby nie przeciążać bazy danych, poniżej został umieszczony usuwający. Została napisana w django oraz korzysta z zewnętrznej bazy danych PostgreSQL. Aplikacja została skonteneryzowana oraz wrzucona na Docker Huba i to właśnie z niego pobierzemy obraz, który aplikacja będzie odpalać.
+
+## Wdrażanie
 
 Aby utworzyć taka aplikację, najlepiej będzie podążać za komendami korzystając a azure CLI.
 
